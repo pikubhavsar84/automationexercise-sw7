@@ -1,0 +1,1446 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Automation Exercise Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 26, 2023 05:17:07 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 26, 2023 05:17:07 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 26, 2023 05:18:20 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='14%'><b>1</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='85%'><b>6</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='54%'><b>36</b> steps passed</small></div>
+<div>
+<small data-tooltip='9%'><b>6</b> steps failed,
+<b>24</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"As a user,":8.266,"As a user,":63.035
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@sanity</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@author_Hiren_Italia</td>
+<td>1</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>14.286%</td>
+</tr>
+<tr>
+<td>@smoke</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>1</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>14.286%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Hiren Italia</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>Automation Exercise</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 1,
+failChild: 6,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 36,
+failGrandChild: 6,
+warningGrandChild: 0,
+skipGrandChild: 24,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@author_Hiren_Italia</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a user,</p>
+            <p class="text-sm">
+              <span>17:17:09</span> / <span>00:00:08:266</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">As a user,</h5>
+<span class='badge badge-success'>12.26.2023 17:17:09</span>
+<span class='badge badge-danger'>12.26.2023 17:17:17</span>
+<span class='badge badge-default'>00:00:08:266</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> I should log the contact us form
+I should redirect to Test Cases page successfully
+I should subscribe in the homepage
+I should subscribe in the Cart page
+I should remove the product from cart
+I should download invoice after purchase order
+I should scroll down and scroll up using Arrow button at bottom right corner
+I should scroll down and scroll up without Arrow button</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User should scroll down and scroll up using Arrow button at bottom right corner</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.LoginSteps.iAmOnHomepageAndVerifyTheHomepageURL()">
+                <span>Given I am on homepage and verify the homepage URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.MoreScenarioSteps.iScrollDownUpToSubscriptionLink()">
+                <span>When I scroll down up to subscription link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.MoreScenarioSteps.iShouldSeeTheSubscriptionText(java.lang.String)">
+                <span>Then I should see the subscription "SUBSCRIPTION" text</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automationexercise.steps.MoreScenarioSteps.iClickOnArrowUpButtonAtBottomRightCorner()">
+                <span>And I click on arrow up button at bottom right corner</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fa fa-angle-up"></i> is not clickable at point (1489, 683). Other element would receive the click: <div id="aswift_7_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=120.0.6099.130)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d036182d5f75a4be282b4d931deb0d76, clickElement {id=7507862851DCEF187D4D843E4D3D1D4B_element_42}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\hiren\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64879/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d036182d5f75a4be282b4d931deb0d76)] -> xpath: //i[@class='fa fa-angle-up']]
+Session ID: d036182d5f75a4be282b4d931deb0d76
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at com.automationexercise.utility.Utility.clickOnElement(Utility.java:49)
+	at com.automationexercise.pages.HomePage.clickOnBottomRightArrowButton(HomePage.java:183)
+	at com.automationexercise.steps.MoreScenarioSteps.iClickOnArrowUpButtonAtBottomRightCorner(ExtraSteps.java:92)
+	at ✽.I click on arrow up button at bottom right corner(file:///C:/Users/hiren/IdeaProjects/automation-excercise/src/test/resources/features/extra.feature:176)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.MoreScenarioSteps.iShouldSeeTheMessage(java.lang.String)">
+                <span>And I should see the message "Full-Fledged practice website for Automation Engineers"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automationexercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User should scroll down and scroll up using Arrow button at bottom right corner
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a user,</p>
+            <p class="text-sm">
+              <span>17:17:17</span> / <span>00:01:03:035</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">As a user,</h5>
+<span class='badge badge-success'>12.26.2023 17:17:17</span>
+<span class='badge badge-danger'>12.26.2023 17:18:20</span>
+<span class='badge badge-default'>00:01:03:035</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> I should verify all products and product detail page
+I should search product
+I should add products in cart
+I should verify product quantity in cart
+I should view category products
+I should view and cart brand products
+I should search product and verify cart after login
+I should add review on product
+I should add to cart from recommended items</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>User should verify all products and product detail page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.LoginSteps.iAmOnHomepageAndVerifyTheHomepageURL()">
+                <span>Given I am on homepage and verify the homepage URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iClickOnProductsTab()">
+                <span>When I click on products tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeTextOnProductPage(java.lang.String)">
+                <span>Then I should see text "ALL PRODUCTS" on product page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automationexercise.steps.ProductSteps.iClickOnViewProductOfFirstProduct(java.lang.String)">
+                <span>And I click on view product of first product "Blue Top"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/product_details/1" style="color: brown;">...</a> is not clickable at point (625, 685). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" style="width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20231207/r20110914/zrt_lookup_fy2021.html?fsb=1#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=2&amp;uci=a!2&amp;btvi=1" data-google-container-id="a!2" data-google-query-id="CMWy99rNrYMDFedsFQgdmG8E2A" data-load-complete="true"></iframe>
+  (Session info: chrome=120.0.6099.130)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e8603f09f34123af62fa7942aece61d, clickElement {id=82A323DCB9AEC4040D78688A0E5867DF_element_82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\hiren\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64922}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64922/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5e8603f09f34123af62fa7942aece61d)] -> relative: {filters=[{args=[[[ChromeDriver: chrome on windows (5e8603f09f34123af62fa7942aece61d)] -> xpath: //div[@class = 'productinfo text-center']/p]], kind=below}], root={xpath=//ul[@class = 'nav nav-pills nav-justified']/li/a}}]
+Session ID: 5e8603f09f34123af62fa7942aece61d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.automationexercise.pages.ProductPage.clickOnViewProductWithProductName(ProductPage.java:86)
+	at com.automationexercise.steps.ProductSteps.iClickOnViewProductOfFirstProduct(ProductSteps.java:20)
+	at ✽.I click on view product of first product "Blue Top"(file:///C:/Users/hiren/IdeaProjects/automation-excercise/src/test/resources/features/product.feature:29)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iAmOnProductDetailsPageAndVerifyTheURL()">
+                <span>And I am on product details page and verify the URL</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeProductName(java.lang.String)">
+                <span>And I should see product name "Blue Top"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeCategory(java.lang.String)">
+                <span>And I should see category "Category: Women > Tops"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeePrice(java.lang.String)">
+                <span>And I should see price "Rs. 500"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeAvailability(java.lang.String)">
+                <span>And I should see availability "Availability: In Stock"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeCondition(java.lang.String)">
+                <span>And I should see condition "Condition: New"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeBrand(java.lang.String)">
+                <span>And I should see brand "Brand: Polo"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automationexercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User should verify all products and product detail page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded2.png' src="../screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="25"><span class="badge log fail-bg mr-2">Fail</span>User should add products in cart</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.LoginSteps.iAmOnHomepageAndVerifyTheHomepageURL()">
+                <span>Given I am on homepage and verify the homepage URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iClickOnProductsTab()">
+                <span>When I click on products tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterSteps.iAddProductToTheCart(java.lang.String)">
+                <span>Then I add product "Men Tshirt" to the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automationexercise.steps.ProductSteps.iClickOnContinueShoppingLink()">
+                <span>And I click on continue shopping link</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0e19c776717e1bb4f6ad09d7ff739a9, clickElement {id=6CA69BC19549F5E7B83D7688609481E5_element_77}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\hiren\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64970}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64970/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a0e19c776717e1bb4f6ad09d7ff739a9)] -> xpath: //button[normalize-space()='Continue Shopping']]
+Session ID: a0e19c776717e1bb4f6ad09d7ff739a9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at com.automationexercise.utility.Utility.clickOnElement(Utility.java:49)
+	at com.automationexercise.pages.ProductPage.clickOnContinueShoppingLink(ProductPage.java:114)
+	at com.automationexercise.steps.ProductSteps.iClickOnContinueShoppingLink(ProductSteps.java:105)
+	at ✽.I click on continue shopping link(file:///C:/Users/hiren/IdeaProjects/automation-excercise/src/test/resources/features/product.feature:75)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.RegisterSteps.iAddProductToTheCart(java.lang.String)">
+                <span>And I add product "Blue Top" to the cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.RegisterSteps.iClickOnViewCartInPopup()">
+                <span>And I click on view cart in popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iVerifyTheProductInShoppingCart(java.lang.String)">
+                <span>Then I verify the product "Blue Top" in shopping cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iVerifyTheProductInShoppingCart(java.lang.String)">
+                <span>Then I verify the product "Men Tshirt" in shopping cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automationexercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User should add products in cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded3.png' src="../screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>User should verify product quantity in cart</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.LoginSteps.iAmOnHomepageAndVerifyTheHomepageURL()">
+                <span>Given I am on homepage and verify the homepage URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iClickOnViewProductOfFirstProduct(java.lang.String)">
+                <span>When I click on view product of first product "Blue Top"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iAmOnProductDetailsPageAndVerifyTheURL()">
+                <span>And I am on product details page and verify the URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeProductName(java.lang.String)">
+                <span>And I should see product name "Blue Top"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeCategory(java.lang.String)">
+                <span>And I should see category "Category: Women > Tops"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeePrice(java.lang.String)">
+                <span>And I should see price "Rs. 500"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeAvailability(java.lang.String)">
+                <span>And I should see availability "Availability: In Stock"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeCondition(java.lang.String)">
+                <span>And I should see condition "Condition: New"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeBrand(java.lang.String)">
+                <span>And I should see brand "Brand: Polo"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iIncreaseTheQuantity(java.lang.String)">
+                <span>And I increase the quantity "4"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iClickOnAddToCartButton()">
+                <span>And I click on add to cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iClickOnViewCartLinkInSuccessMessage()">
+                <span>And I click on view cart link in success message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeQuantity(java.lang.String)">
+                <span>Then I should see quantity "4"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="52"><span class="badge log fail-bg mr-2">Fail</span>User should view category products</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.LoginSteps.iAmOnHomepageAndVerifyTheHomepageURL()">
+                <span>Given I am on homepage and verify the homepage URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iClickOnProductsTab()">
+                <span>When I click on products tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automationexercise.steps.ProductSteps.iClickOnCategory(java.lang.String)">
+                <span>Then I click on "Women" category</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a data-toggle="collapse" data-parent="#accordian" href="#Women">...</a> is not clickable at point (238, 620). Other element would receive the click: <div id="aswift_7_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=120.0.6099.130)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9694e12af67fa581588e975739cd9c29, clickElement {id=8606E936B3259C25F5F3F64533F9D53E_element_35}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\hiren\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65079/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9694e12af67fa581588e975739cd9c29)] -> xpath: //a[normalize-space()='Women']]
+Session ID: 9694e12af67fa581588e975739cd9c29
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at com.automationexercise.utility.Utility.clickOnElement(Utility.java:49)
+	at com.automationexercise.pages.ProductPage.clickOnCategory(ProductPage.java:123)
+	at com.automationexercise.steps.ProductSteps.iClickOnCategory(ProductSteps.java:115)
+	at ✽.I click on "Women" category(file:///C:/Users/hiren/IdeaProjects/automation-excercise/src/test/resources/features/product.feature:122)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iClickOnInWomenCategory(java.lang.String)">
+                <span>And I click on "Dress" in women category</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeePageTitle(java.lang.String)">
+                <span>And I should see "WOMEN - DRESS PRODUCTS" page title</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iClickOnCategory(java.lang.String)">
+                <span>Then I click on "Men" category</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iClickOnInMenCategory(java.lang.String)">
+                <span>And I click on "Tshirts" in men category</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeePageTitle(java.lang.String)">
+                <span>And I should see "MEN - TSHIRTS PRODUCTS" page title</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automationexercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User should view category products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded4.png' src="../screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="63"><span class="badge log fail-bg mr-2">Fail</span>User should view and cart brand products</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.LoginSteps.iAmOnHomepageAndVerifyTheHomepageURL()">
+                <span>Given I am on homepage and verify the homepage URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iClickOnProductsTab()">
+                <span>When I click on products tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iClickOnBrandInBrandsTab(java.lang.String)">
+                <span>Then I click on "Polo" brand in Brands tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeePageTitle(java.lang.String)">
+                <span>And I should see "BRAND - POLO PRODUCTS" page title</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [BRAND - POLO PRODUCTS] but found [ALL PRODUCTS]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.automationexercise.steps.ProductSteps.iShouldSeePageTitle(ProductSteps.java:130)
+	at ✽.I should see "BRAND - POLO PRODUCTS" page title(file:///C:/Users/hiren/IdeaProjects/automation-excercise/src/test/resources/features/product.feature:144)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iClickOnBrandInBrandsTab(java.lang.String)">
+                <span>And I click on "Madame" brand in Brands tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeePageTitle(java.lang.String)">
+                <span>And I should see "BRAND - MADAME PRODUCTS" page title</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automationexercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User should view and cart brand products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded5.png' src="../screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log fail-bg mr-2">Fail</span>User should add review on product</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.LoginSteps.iAmOnHomepageAndVerifyTheHomepageURL()">
+                <span>Given I am on homepage and verify the homepage URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iClickOnProductsTab()">
+                <span>When I click on products tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeTextOnProductPage(java.lang.String)">
+                <span>Then I should see text "ALL PRODUCTS" on product page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automationexercise.steps.ProductSteps.iClickOnViewProductOfFirstProduct(java.lang.String)">
+                <span>And I click on view product of first product "Blue Top"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/product_details/1" style="color: brown;">...</a> is not clickable at point (625, 685). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" style="width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20231207/r20110914/zrt_lookup_fy2021.html?fsb=1#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=2&amp;uci=a!2&amp;btvi=1" data-google-container-id="a!2" data-google-query-id="CKKVpfPNrYMDFUuG6QUd9koN-w" data-load-complete="true"></iframe>
+  (Session info: chrome=120.0.6099.130)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d4e89f871e7091da71966061038021d3, clickElement {id=C6002499BC263DC442B3510A942CCB1A_element_84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\hiren\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65166}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65166/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d4e89f871e7091da71966061038021d3)] -> relative: {filters=[{args=[[[ChromeDriver: chrome on windows (d4e89f871e7091da71966061038021d3)] -> xpath: //div[@class = 'productinfo text-center']/p]], kind=below}], root={xpath=//ul[@class = 'nav nav-pills nav-justified']/li/a}}]
+Session ID: d4e89f871e7091da71966061038021d3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.automationexercise.pages.ProductPage.clickOnViewProductWithProductName(ProductPage.java:86)
+	at com.automationexercise.steps.ProductSteps.iClickOnViewProductOfFirstProduct(ProductSteps.java:20)
+	at ✽.I click on view product of first product "Blue Top"(file:///C:/Users/hiren/IdeaProjects/automation-excercise/src/test/resources/features/product.feature:197)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iEnterNameAtYourNameField(java.lang.String)">
+                <span>And I enter "Pinal" name at your name field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iEnterEmailAtEmailAddressField(java.lang.String)">
+                <span>And I enter "pinalp@gmail.com" email at email address field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iEnterMessageToReviewHereField(java.lang.String)">
+                <span>And I enter "This is a nice product." message to review here field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iClickOnReviewSubmitButton()">
+                <span>And I click on review submit button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.ProductSteps.iShouldSeeMessage(java.lang.String)">
+                <span>Then I should see "Thank you for your review." message</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automationexercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User should add review on product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded6.png' src="../screenshots/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='11'>User should verify all products and product detail page</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should verify all products and product detail page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">@author_Hiren_Italia</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@author_Hiren_Italia</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User should scroll down and scroll up using Arrow button at bottom right corner</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should scroll down and scroll up using Arrow button at bottom right corner</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='11'>User should verify all products and product detail page</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should verify all products and product detail page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='25'>User should add products in cart</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should add products in cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:17:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='36'>User should verify product quantity in cart</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should verify product quantity in cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='52'>User should view category products</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should view category products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:18:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='63'>User should view and cart brand products</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should view and cart brand products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:18:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='72'>User should add review on product</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should add review on product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='11'>User should verify all products and product detail page</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should verify all products and product detail page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User should scroll down and scroll up using Arrow button at bottom right corner</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should scroll down and scroll up using Arrow button at bottom right corner</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='11'>User should verify all products and product detail page</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should verify all products and product detail page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='25'>User should add products in cart</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should add products in cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:17:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='36'>User should verify product quantity in cart</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should verify product quantity in cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='52'>User should view category products</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should view category products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:18:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='63'>User should view and cart brand products</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should view and cart brand products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:18:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='72'>User should add review on product</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should add review on product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>And I click on arrow up button at bottom right corner</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should scroll down and scroll up using Arrow button at bottom right corner.And I click on arrow up button at bottom right corner</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='16'>And I click on view product of first product "Blue Top"</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should verify all products and product detail page.And I click on view product of first product "Blue Top"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='56'>Then I click on "Women" category</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should view category products.Then I click on "Women" category</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:18:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='77'>And I click on view product of first product "Blue Top"</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should add review on product.And I click on view product of first product "Blue Top"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:18:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='68'>And I should see "BRAND - POLO PRODUCTS" page title</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should view and cart brand products.And I should see "BRAND - POLO PRODUCTS" page title</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.StaleElementReferenceException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.StaleElementReferenceException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='30'>And I click on continue shopping link</a>
+<div class="">
+<span class="badge badge-default">As a user,.User should add products in cart.And I click on continue shopping link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
